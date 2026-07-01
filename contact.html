@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Benjamin Blumenthal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Benjamin Blumenthal</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <h2>Contact</h2>
+
+  <div style="display:flex; gap:3rem; align-items:flex-start; flex-wrap:wrap;">
+
+    <div>
+      <div class="contact-block">
+        <p class="contact-label">EMAIL</p>
+        <p><a href="mailto:benjamin.blumenthal@ulb.be">benjamin.blumenthal@ulb.be</a></p>
+      </div>
+
+      <div class="contact-block">
+        <p class="contact-label">ADDRESS</p>
+        <p>R42.5.202, ECARES (ULB)</p>
+        <p>Ave. F. D. Roosevelt 42</p>
+        <p>1050 Brussels, Belgium</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">Benjamin Blumenthal · ECARES, Université Libre de Bruxelles</div>
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>

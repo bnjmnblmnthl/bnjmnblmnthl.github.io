@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benjamin Blumenthal – Economist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Benjamin Blumenthal</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul id="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Benjamin Blumenthal</h1>
+      <p class="subtitle">Research Fellow (FRS-FNRS) · ECARES, Université Libre de Bruxelles</p>
+      <p>
+        I am an economist working in <strong>Political Economy</strong>, <strong>Game Theory</strong>,
+        and <strong>Organizational Economics</strong>. My research studies electoral accountability,
+        lobbying, and policymaking, combining formal theory with applied methods.
+      </p>
+      <p>
+        I am currently a Research Fellow (FRS-FNRS) at ECARES, Université Libre de Bruxelles.
+        Before that, I was a postdoctoral researcher at the Chair of Political Economy and eDemocracy,
+        ETH Zürich, and I received my Ph.D. in Economics from the Paris School of Economics / EHESS in 2023.
+      </p>
+      <div class="social-links">
+        <a href="https://scholar.google.fr/citations?user=tPTopb8AAAAJ&hl=fr&oi=ao" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.5V20H9v-6h6v6h5.5V9.5H24z"/></svg>
+          Google Scholar
+        </a>
+        <a href="https://x.com/bnjmnblmnthl" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X
+        </a>
+        <a href="https://bsky.app/profile/bnjmnblmnthl.bsky.social" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.299-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
+          Bluesky
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-bottom:1rem; font-size:0.88rem; margin-top:2rem;">
+    <a href="cv.pdf" target="_blank" style="color:var(--accent-dk);">Download CV in PDF</a>
+  </p>
+</div>
+
+<footer>
+  <div class="footer-inner">Benjamin Blumenthal · ECARES, Université Libre de Bruxelles</div>
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

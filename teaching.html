@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching – Benjamin Blumenthal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Benjamin Blumenthal</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="institution">
+    <h3>Université Libre de Bruxelles (Belgium)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Advanced Topics in Political Economics</td><td>Lecturer</td><td>Graduate</td><td>2027</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="institution">
+    <h3>ETH Zürich (Switzerland)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Game Theory</td><td>Teaching Assistant</td><td>Graduate</td><td>2023</td></tr>
+        <tr><td>Political Economy</td><td>Teaching Assistant</td><td>Graduate</td><td>2024 and 2025</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="institution">
+    <h3>Paris School of Economics (France)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>International Trade</td><td>Teaching Assistant</td><td>Graduate</td><td>2019</td></tr>
+        <tr><td>Microeconomics II</td><td>Teaching Assistant</td><td>Graduate</td><td>2020, 2021, and 2022</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="institution">
+    <h3>Université Paris 1 Panthéon-Sorbonne (France)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Microeconomics</td><td>Teaching Assistant</td><td>Undergraduate</td><td>2020 and 2021</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="institution">
+    <h3>Ecole des Ponts ParisTech (France)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Introduction to Economics</td><td>Teaching Assistant</td><td>Undergraduate</td><td>2019</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="institution">
+    <h3>Université Paris Descartes (France)</h3>
+    <table class="course-table">
+      <thead>
+        <tr><th>Course</th><th>Role</th><th>Level</th><th>Period</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Microeconomics</td><td>Teaching Assistant</td><td>Undergraduate</td><td>2017</td></tr>
+        <tr><td>Macroeconomics</td><td>Teaching Assistant</td><td>Undergraduate</td><td>2018</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">Benjamin Blumenthal · ECARES, Université Libre de Bruxelles</div>
+</footer>
+
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('nav-menu');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
