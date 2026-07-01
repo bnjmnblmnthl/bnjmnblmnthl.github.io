@@ -63,12 +63,6 @@ nav a.active {
   font-weight: 700;
 }
 
-.nav-search {
-  color: var(--nav-muted);
-  display: flex;
-  align-items: center;
-}
-
 /* ─── LAYOUT ──────────────────────────────────────────── */
 .container {
   max-width: 1600px;
