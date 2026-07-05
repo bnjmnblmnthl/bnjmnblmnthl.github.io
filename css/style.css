@@ -86,6 +86,34 @@ a:hover { opacity: 0.75; }
 
 strong { font-weight: 700; color: var(--text); }
 
+/* ─── SOCIAL BUTTONS ──────────────────────────────────── */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.5rem 0 1.75rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  padding: 0.35rem 0.95rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  color: #fff;
+  opacity: 1;
+}
+
 /* ─── HOME: TWO-COLUMN CONTACT/NEWS ──────────────────── */
 .two-col {
   display: flex;
