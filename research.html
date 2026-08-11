@@ -16,17 +16,16 @@
 </head>
 <body>
 
-<div class="cover-strip"></div>
-<nav>
-  <div class="nav-inner">
-    <ul id="nav-menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="research.html" class="active">Research</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-name" href="index.html">Benjamin Blumenthal</a>
+    <nav aria-label="Sections">
+      <a href="index.html">Accueil</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
   </div>
-</nav>
+</div>
 
 <div class="container">
 
@@ -88,13 +87,5 @@
 
 </div>
 
-<script>
-  const btn = document.getElementById('hamburger');
-  const menu = document.getElementById('nav-menu');
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('open');
-    menu.classList.toggle('open');
-  });
-</script>
 </body>
 </html>

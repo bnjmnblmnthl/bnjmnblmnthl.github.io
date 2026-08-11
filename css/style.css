@@ -2,8 +2,6 @@
 
 :root {
   --accent:     #cc6b29;
-  --strip-1:    #f8ddd0;
-  --strip-2:    #f2c4b0;
   --nav-muted:  #5f6368;
   --text:       #202124;
   --border:     #e0e0e0;
@@ -19,48 +17,59 @@ body {
   background: #ffffff;
 }
 
-/* ─── COVER STRIP ─────────────────────────────────────── */
-.cover-strip {
-  height: 8px;
-  width: 100%;
-  background: linear-gradient(90deg, var(--strip-1), var(--strip-2));
-}
-
-/* ─── NAV ─────────────────────────────────────────────── */
-nav {
-  background: #ffffff;
+/* ─── TOPBAR ──────────────────────────────────────────── */
+.topbar {
   position: sticky;
   top: 0;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
 }
 
-.nav-inner {
+.topbar-inner {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 1.4rem 8%;
+  padding: 0.9rem 8%;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 
-nav ul { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+.topbar-name {
+  font-family: 'Roboto', 'Google Sans', Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
 
-nav a {
-  display: block;
+.topbar-inner nav { display: flex; gap: 1.4rem; }
+
+.topbar-inner nav a {
   color: var(--nav-muted);
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   font-weight: 400;
-  letter-spacing: 0;
   transition: color 0.15s;
 }
 
-nav a:hover { color: var(--text); }
+.topbar-inner nav a:hover { color: var(--accent); }
 
-nav a.active {
+.topbar-inner nav a.active {
   color: var(--text);
   font-weight: 700;
+}
+
+@media (max-width: 33rem) {
+  .topbar-name { display: none; }
+  .topbar-inner { justify-content: center; }
+  .topbar-inner nav { gap: 1.15rem; }
 }
 
 /* ─── LAYOUT ──────────────────────────────────────────── */
@@ -157,59 +166,8 @@ strong { font-weight: 700; color: var(--text); }
 
 .institution-heading:first-child { margin-top: 0; }
 
-/* ─── HAMBURGER ───────────────────────────────────────── */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-.hamburger span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
-  transition: transform 0.25s, opacity 0.25s;
-}
-
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
 /* ─── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 640px) {
-  .hamburger { display: flex; }
-  .nav-inner { justify-content: space-between; padding: 1rem 6%; }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #ffffff;
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-
-  nav ul.open { display: flex; }
-
-  nav a {
-    padding: 0.85rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.95rem;
-    width: 100%;
-  }
-
   .two-col { gap: 2rem; }
   .container { padding: 2rem 6% 3rem; }
   h1 { font-size: 1.7rem; }
